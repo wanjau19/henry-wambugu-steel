@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const cards = [
-  { icon:"📞", title:"Phone",    value:"0722 909 059",        note:"Call anytime for quick consultations" },
+  { icon:"📞", title:"Phone",    value:"0722 909 059",        note:"Call anytime for quick consultations" },
   { icon:"📍", title:"Location", value:"Nairobi, Kenya",      note:"Available for home & on-site installations" },
   { icon:"🕐", title:"Hours",    value:"Mon – Sat: 8am – 6pm",note:"Sunday: By appointment only" },
-  { icon:"💬", title:"WhatsApp", value:"0722 909 059",        note:"Chat us for fast responses" },
+  { icon:"💬", title:"WhatsApp", value:"0722 909 059",        note:"Chat us for fast responses" },
 ];
 
 function Field({ label, type, placeholder }: { label:string; type:string; placeholder:string }) {
@@ -28,6 +28,10 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // Honeypot check - if bot filled hidden field, silently ignore
+    const form = e.target as HTMLFormElement;
+    const honeypot = form.querySelector('input[name="website"]') as HTMLInputElement;
+    if (honeypot && honeypot.value) return;
     setSent(true);
     setTimeout(() => setSent(false), 3500);
   };
@@ -72,7 +76,11 @@ export default function Contact() {
 
           <motion.form initial={{ opacity:0, x:50 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ duration:.9 }}
             onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Honeypot field - hidden from humans, catches bots */}
+          <div style={{ display:"none" }}>
+            <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <Field label="Your Name"    type="text"  placeholder="e.g. John Kamau" />
               <Field label="Phone Number" type="tel"   placeholder="e.g. 0722 000 000" />
             </div>
