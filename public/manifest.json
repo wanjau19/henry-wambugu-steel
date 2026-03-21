@@ -1,0 +1,13 @@
+{
+  "name": "Henry Wambugu Steel Works",
+  "short_name": "Henry Steel",
+  "description": "Premium Steel & Metal Works in Nairobi Kenya",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d1a",
+  "theme_color": "#e8560a",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }
+  ]
+}
