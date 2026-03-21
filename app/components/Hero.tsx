@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 
 const container: Variants = {
@@ -89,7 +90,15 @@ export default function Hero() {
             </div>
             <div className="absolute inset-[30px] rounded-full" style={{ border:"1px dashed rgba(240,165,0,.2)", animation:"spin-slow 14s linear infinite reverse" }} />
             <div className="absolute inset-[60px] rounded-full overflow-hidden" style={{ border:"3px solid rgba(232,86,10,.5)" }}>
-              <img src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500&fit=crop" alt="Steel Gate" className="w-full h-full object-cover" style={{ filter:"saturate(.7) contrast(1.1)" }} />
+              <Image
+                src="https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500&fit=crop"
+                alt="Steel Gate"
+                fill
+                sizes="260px"
+                className="object-cover"
+                style={{ filter:"saturate(.7) contrast(1.1)" }}
+                priority
+              />
               <div className="absolute inset-0" style={{ background:"linear-gradient(135deg,rgba(232,86,10,.3) 0%,transparent 60%)" }} />
             </div>
             <motion.div animate={{ y:[0,-8,0] }} transition={{ duration:4, repeat:Infinity }}
