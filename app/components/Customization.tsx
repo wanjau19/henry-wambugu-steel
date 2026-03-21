@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -54,8 +55,15 @@ export default function Customization() {
             className="relative hidden lg:block">
             <div className="relative overflow-hidden" style={{ height:"420px" }}>
               <motion.div style={{ y: imgY, position:"absolute", top:"-10%", bottom:"-10%", left:0, right:0 }}>
-                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&h=600&fit=crop" alt="Welding craftsman"
-                  className="w-full h-full object-cover" style={{ filter:"saturate(.7) contrast(1.1)" }} />
+                <Image
+                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=700&h=600&fit=crop"
+                  alt="Welding craftsman"
+                  fill
+                  sizes="50vw"
+                  className="object-cover"
+                  style={{ filter:"saturate(.7) contrast(1.1)" }}
+                  loading="lazy"
+                />
                 <div className="absolute inset-0" style={{ background:"linear-gradient(135deg,rgba(232,86,10,.2) 0%,transparent 60%)" }} />
               </motion.div>
               <motion.div animate={{ y:[0,-8,0] }} transition={{ duration:4, repeat:Infinity }}
