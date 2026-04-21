@@ -36,7 +36,7 @@ export default function Navbar() {
               <span className="text-white text-sm">⚒</span>
             </div>
             <div>
-              <div className="font-display text-lg tracking-widest text-white">Henry Wambugu</div>
+              <div className="font-display text-lg tracking-widest text-white">Rina steel</div>
               <div className="font-condensed text-[0.6rem] tracking-[4px] uppercase text-[#e8560a]">Steel and Metal Works</div>
             </div>
           </a>
@@ -527,8 +527,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-between items-center pt-6 gap-2 text-[0.78rem]" style={{ borderTop:"1px solid rgba(255,255,255,.06)", color:"rgba(176,186,200,.5)" }}>
-          <p>© 2025 Henry Wambugu Steel Works. All rights reserved.</p>
-          <p>Made with <span style={{ color:"var(--orange)" }}>❤</span> by your son Peter</p>
+          <p>© 2025 Henry Wambugu Steel Works. All rights reserved.</p> 
         </div>
       </div>
     </footer>
