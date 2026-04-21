@@ -10,6 +10,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
+export const metadata = {
+  title: "Rina Steel | Premium Steel & Metal Works Nairobi",
+  description: "Custom-crafted steel gates, metallic doors, furniture and welding solutions in Nairobi Kenya.",
+};
+
 export default function Home() {
   return (
     <>
