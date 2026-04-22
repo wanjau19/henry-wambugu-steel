@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   keywords: "Rina steel, rina steel, steel gates nairobi, metallic doors kenya, steel furniture, window grills, welding nairobi, henry wambugu nairobi,Rina steel works",
   manifest: "/manifest.json",
   verification: {
-    google: "Ycdkm8iR9ZrDH0GamyThJZWudgtA1LwzVhb_5Cs59lU",
+    google: "Ycdkm8iR9ZrDH0GamyThJZWudgtA1LwzVhb_5Cs59lU",<meta name="google-site-verification" content="Ycdkm8iR9ZrDH0GamyThJZWudgtA1LwzVhb_5Cs59lU" />
   },
   openGraph: {
     title: "Rina Steel | Premium Steel & Metal Works",
