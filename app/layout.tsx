@@ -25,7 +25,7 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   title: "Rina Steel| Premium Steel & Metal Works Nairobi",
   description: "Custom-crafted steel gates, metallic doors, furniture and welding solutions in Nairobi Kenya. Built with precision and made to last. Call 0722 909 059.",
-  keywords: "wambugu henry steel, henry wambugu steel, steel gates nairobi, metallic doors kenya, steel furniture, window grills, welding nairobi, henry wambugu nairobi",
+  keywords: "Rina steel, rina steel, steel gates nairobi, metallic doors kenya, steel furniture, window grills, welding nairobi, henry wambugu nairobi,Rina steel works",
   manifest: "/manifest.json",
   verification: {
     google: "Ycdkm8iR9ZrDH0GamyThJZWudgtA1LwzVhb_5Cs59lU",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rina Steel | Premium Steel & Metal Works",
     description: "Custom steel gates, doors, furniture and welding in Nairobi Kenya.",
-    url: "https://henry-steel.vercel.app",
+    url: "https://rina-steel.vercel.app",
     siteName: "Rina Steel Works",
     locale: "en_KE",
     type: "website",
